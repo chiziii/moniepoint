@@ -10,26 +10,35 @@
   top: 0;
   border-radius: 1rem;
   margin: 0.5rem auto;
-  display: flex
+  display: flex;
+  height: 4rem;
 }
 
 .logo {
-  width: 4rem;
+  width: 8rem;
   padding: 1rem;
 }
 
 .navbar-list {
   display: flex;
+  width: 100%;
 }
 
-.navbar-list span {
-  margin: 1rem 10rem;
-  padding: 0;
+.list-wrapper {
+    margin: 0rem 7.5rem;
+    display: flex;
+    height: 80%;
+    align-self: center;
+    width: 70%;
+}
+
+.list-wrapper span {
   display: flex;
   background-color: #333131;
   height: 80%;
   border-radius: 0.5rem;
   align-self: center;
+	margin: 0 auto;
 }
 
 .navbar-item {
@@ -39,7 +48,7 @@
   text-decoration: none;
   color: #fff;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .navbar-item:hover {
@@ -48,15 +57,375 @@
 
 .sign-up {
   background-color: white;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   border: none;
-  margin: 5px 0;
+  margin: 9px 10px;
   padding: 0 1rem;
   cursor: pointer;
+  width: 7rem;
 }
 
 .sign-up:hover {
   background-color: black;
   color: #fff;
   border: 1px solid #fff
+}
+
+.request-btn {  
+   border-radius: 0.75rem;
+   border: none;
+   padding: 1rem 3rem;
+   margin-right: 1rem;
+}
+
+.request-btn:hover {
+  background-color: black;
+  color: #fff;
+  border: 1px solid #fff
+}
+
+.start-btn {
+  background-color: #fe4a23;
+  color: #fff;
+  border-radius: 0.75rem;
+   border: none;
+   padding: 1rem 3rem;
+}
+
+.start-btn:hover {
+  background-color: black;
+  color: #fff;
+  border: 1px solid #fff
+}
+
+.animation-one {
+  width: 10%;
+    height: 10%;
+}
+
+.animation-two {
+ width: 23%;
+  height: 30%;
+}
+
+.banner-text {
+  font-weight: 400;
+  font-size: 7rem;
+}
+
+.banner-text-three {
+  margin-left: 25%
+}
+
+.group-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem
+}
+
+.banner-text-two {
+  margin-left: -16rem;
+}
+
+.grey-text {
+  color: #a7a5a5
+}
+
+.dark-grey {
+  color: #565656
+}
+
+.animation-three {
+  width: 4%;
+  margin: 0 1rem 0 1rem;
+}
+
+.rounded-card-wrapper {
+  background-color: #f9f9f9;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  border-radius: 5rem;
+  margin-bottom: 4rem;
+}
+
+.key-text-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.key-text {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.key-widget-text {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.ready-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 4rem;
+}
+
+.mini-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 4rem;
+}
+
+.reports-card{
+  background-color: #fff;
+  padding-top: 2rem;
+  border-radius: 2rem;
+  border: 1px solid #eaeaea;
+  box-shadow: 0px 24px 34px 0px #0000000D;
+  width: 60%;
+  margin: 2rem
+}
+
+.widget-card{
+  background-color: #0d0d0d;
+  padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid #eaeaea;
+    box-shadow: 0px 24px 34px 0px #0000000D;
+    width: 40%;
+    margin: 2rem
+}
+
+.report-button {
+    background-color: yellow;
+    border-radius: 0.75rem;
+    border: none;
+    margin: 9px 10px;
+    padding: 0 1rem;
+    cursor: pointer;
+    width: 9rem;
+    height: 3rem;
+    box-shadow: 0px 24px 34px 0px #0000000D;
+}
+
+.stats {
+  padding: 1rem;
+  width: 53%;
+  border-top-style: solid;
+  border-width: 1px;
+  border-left-style: solid;
+  border-top-left-radius: 3rem;
+  border-color: #ccc
+}
+
+.first-half-wrapper {
+  margin: 0 auto;
+  width: 47%;
+  padding-left: 2rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.platform-text {
+  color: #999999;
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+.animation-four {
+  width: 20%;
+  height: 15%;
+  margin-top: 1rem;
+}
+
+.animation-five {
+  width: 80%;
+  margin: 10px 0
+}
+
+.animation-six {
+  width: 30%;
+  height: 30%;
+  margin-left: 0.5rem;
+}
+
+.animation-seven {
+  width: 100%;
+  height: 50%;
+  margin-top: 1rem;
+}
+
+.visitor-card {
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+  width: 7rem;
+  padding: 0.5rem
+}
+
+.sales-text {
+  font-size: 1.25rem;
+  padding: 0 1rem;
+  font-weight: 400
+}
+
+.price-text {
+  font-size: 1.25rem;
+  display: flex
+}
+
+.profit-wrapper {
+  padding: 0 0.5rem;
+}
+
+.transaction-text {
+  font-size: 1rem;
+    padding: 1rem;
+}
+
+.animation-eight{
+  width: 50%
+}
+
+.introductory-text {
+  padding: 6rem 2rem 0 2rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 8rem
+}
+
+.mini-card-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.animation-nine {
+  display: flex;
+    width: 30%;
+    margin: auto;
+}
+
+.transactions {
+  border: 1px solid #312f2f;
+    border-radius: 2rem;
+    background-color: #121111;
+    width: 45%;
+    height: 14.25rem;
+    margin-top: 0.5rem;
+}
+
+.mt {
+  margin-top: 5rem;
+}
+
+.cash-text {
+  font-weight: 400;
+    font-size: 4rem;
+    padding-left: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.in-text {
+  padding: 3rem 2rem 0 2rem;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.max-text {
+  padding-left: 7rem;
+  font-size: 10rem;
+  margin-bottom: 5rem;
+}
+
+.slide-text {
+  background-color: #ffd128;
+  border-radius: 6rem;
+  width: 40%;
+  padding: 3rem 0;
+}
+
+.hr-1 {
+  width: 90%;
+  margin: 6rem;
+  border-color: #ccc;
+}
+
+.hr-2 {
+  width: 90%;
+  border-color: #ccc;
+}
+
+.animation-eleven {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.started-wrapper {
+  margin: 8rem 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.footer {
+  background-color: #0d0d0d;
+  color: #fff;
+  font-size: 1.5rem;
+  height: 50rem
+}
+
+.footer-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 10rem 0 3rem 2.25rem;
+}
+
+.address-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0 0 3rem 2.25rem;
+}
+
+.footer-logo-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.footer-list-wrapper {
+  display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.email {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+    font-size: 4rem;
+}
+
+.socials {
+  margin-top: 3rem;
+  display: flex;
+    width: 50%;
+    justify-content: center;
+    margin-left: 25rem;
+}
+
+@media (max-width: 1024px) {
+  .banner-text {
+  font-size: 4rem;
+}
+
+.banner-text-two {
+  margin-left: -6rem;
+}
 }

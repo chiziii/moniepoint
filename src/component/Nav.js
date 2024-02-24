@@ -6,14 +6,16 @@ function Navbar() {
       <div className='App'>
     <nav className="navbar">
     <div className="navbar-list">
-        <img className="logo" src={logo} alt='logo' />
+            <img className="logo" src={logo} alt='logo' />
+            <div className="list-wrapper">
         <span>           
           <a className="navbar-item" href="/">Dashboard</a>
           <a className="navbar-item" href="/about">Reports</a>
           <a className="navbar-item" href="/services">Documents</a>
           <a className="navbar-item" href="/contact">History</a>
           <a className="navbar-item" href="/contact">Settings</a>
-            </span> 
+              </span> 
+              </div>
             <button className="sign-up">
               Sign Up
             </button>   
