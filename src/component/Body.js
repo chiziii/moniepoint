@@ -42,17 +42,33 @@ function Body() {
     from: { opacity: 0, y: 100 },
     to: { opacity: inViewTwo ? 1 : 0, y: inViewTwo ? 0 : 100 },
     config: { duration: 1100 },
-    delay: 100,
+    delay: 500,
   });
 
   const springThree = useSpring({
     from: { opacity: 0, y: 100 },
     to: { opacity: inViewThree ? 1 : 0, y: inViewThree ? 0 : 100 },
+    delay: 500,
   });
 
   const springFive = useSpring({
-    from: { opacity: 0, y: 100 },
-    to: { opacity: inViewFive ? 1 : 0, y: inViewFive ? 0 : 100 },
+    from: { opacity: 0, scale: 1 },
+    to: { 
+      opacity: inViewFive ? 1 : 0, 
+      scale: inViewFive ? 1.2 : 1 
+    }, // Zoom to 1.2x when in view
+    config: { duration: 400 },
+    delay: 400,
+  });
+
+  const springFiveButton = useSpring({
+    from: { opacity: 0, scale: 1 },
+    to: { 
+      opacity: inViewFive ? 1 : 0, 
+      scale: inViewFive ? 1.2 : 1 
+    }, // Zoom to 1.2x when in view
+    config: { duration: 400 },
+    delay: 600,
   });
 
   const spanSpring = useSpring({
@@ -73,14 +89,14 @@ function Body() {
     from: { opacity: 0, y: 100 },
     to: { opacity: inViewThree ? 1 : 0, y: inViewThree ? 0 : 100 },
     config: { duration: 1000 },
-    delay: 200,
+    delay: 400,
   });
 
   const spanSpringFour = useSpring({
     from: { opacity: 0, y: 100 },
     to: { opacity: inViewFour ? 1 : 0, y: inViewFour ? 0 : 100 },
     config: { duration: 1000 },
-    delay: 200,
+    delay: 400,
   });
 
   const countdownSpring = useSpring({
@@ -327,10 +343,10 @@ function Body() {
             Ramos today. Sign up for a free trail.
           </span>
         </div>
-        <div className="group-wrapper">
+        <animated.div style={springFiveButton} className="group-wrapper">
           <button className="request-btn">Request a demo</button>
           <button className="start-btn">Start for free</button>
-        </div>
+        </animated.div>
       </div>
     </div>
   );
