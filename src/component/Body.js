@@ -64,16 +64,23 @@ function Body() {
 
   const spanSpringTwo = useSpring({
     from: { opacity: 0, y: 100 },
-    to: { opacity: inViewOne ? 1 : 0, y: inViewOne ? 0 : 100 },
+    to: { opacity: inViewTwo ? 1 : 0, y: inViewTwo ? 0 : 100 },
     config: { duration: 1000 },
     delay: 400,
   });
 
   const spanSpringThree = useSpring({
     from: { opacity: 0, y: 100 },
-    to: { opacity: inViewOne ? 1 : 0, y: inViewOne ? 0 : 100 },
+    to: { opacity: inViewThree ? 1 : 0, y: inViewThree ? 0 : 100 },
     config: { duration: 1000 },
-    delay: 500,
+    delay: 200,
+  });
+
+  const spanSpringFour = useSpring({
+    from: { opacity: 0, y: 100 },
+    to: { opacity: inViewFour ? 1 : 0, y: inViewFour ? 0 : 100 },
+    config: { duration: 1000 },
+    delay: 200,
   });
 
   const countdownSpring = useSpring({
@@ -118,7 +125,7 @@ function Body() {
         <div className="banner-text">
           <animated.div style={spanSpring} className="margin-space">Analytics</animated.div>
           <br />
-          <animated.div style={spanSpringTwo} className="banner-text-two">
+          <animated.div style={spanSpring} className="banner-text-two">
             <span>that</span>
             <span className="grey-text margin-space">helps</span>you  
           </animated.div>
@@ -131,7 +138,7 @@ function Body() {
           alt="AnimationOne"
         />
       </div>
-      <animated.div style={spanSpringThree} className="banner-text-three banner-text">
+      <animated.div style={spanSpring} className="banner-text-three banner-text">
         {" "}
         shape
         <span>
@@ -251,12 +258,12 @@ function Body() {
           </span>
         </div>
       </div>
-      <div className="max-text">
-        <span>
+      <div className="max-text" ref={refThree}>
+        <animated.span style={spanSpringThree}>
           Maximize
           <span className="grey-text"> efficiency</span> <br />
           with our initiative
-        </span>
+        </animated.span>
       </div>
       <div className="key-text-wrapper" ref={refThree}>
         <animated.img
@@ -293,11 +300,11 @@ function Body() {
         </div>
       </div> */}
       <div className="max-text" ref={refFour}>
-        <span>
+        <animated.span style={spanSpringFour}>
           We give full <br />
           <span className="grey-text"> control </span>
           over your data
-        </span>
+        </animated.span>
       </div>
       <div>
         <img
