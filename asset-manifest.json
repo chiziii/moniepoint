@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.87927a73.css",
-    "main.js": "/react-gh-pages/static/js/main.0f9c4734.js",
-    "static/js/453.ed3810f9.chunk.js": "/react-gh-pages/static/js/453.ed3810f9.chunk.js",
-    "static/media/ani-7.png": "/react-gh-pages/static/media/ani-7.94c035f15773c9e2ecb1.png",
-    "static/media/ani-11.png": "/react-gh-pages/static/media/ani-11.7c1cf9441f407da65f05.png",
-    "static/media/ani-2.png": "/react-gh-pages/static/media/ani-2.664c60556015c1f8abe5.png",
-    "static/media/ani-8.png": "/react-gh-pages/static/media/ani-8.0e9ccd3082fa75c375eb.png",
-    "static/media/footer-logo.png": "/react-gh-pages/static/media/footer-logo.5481ae4d5610eadfed25.png",
-    "static/media/ani-10.png": "/react-gh-pages/static/media/ani-10.713e2e73e7373dff01d1.png",
-    "static/media/ani-1.png": "/react-gh-pages/static/media/ani-1.299039c22bb533f40414.png",
-    "static/media/ani-12.png": "/react-gh-pages/static/media/ani-12.bfec671507f33c15618d.png",
-    "static/media/footer-qr.png": "/react-gh-pages/static/media/footer-qr.c7f3f6c7de90bf2888f9.png",
-    "static/media/ani-3.png": "/react-gh-pages/static/media/ani-3.c193f2db868cc97f95e4.png",
-    "static/media/ani-6.png": "/react-gh-pages/static/media/ani-6.3696761d2fa0189ad2bb.png",
-    "static/media/ani-4.png": "/react-gh-pages/static/media/ani-4.af7dc03c526acb22cd66.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.87927a73.css.map": "/react-gh-pages/static/css/main.87927a73.css.map",
-    "main.0f9c4734.js.map": "/react-gh-pages/static/js/main.0f9c4734.js.map",
-    "453.ed3810f9.chunk.js.map": "/react-gh-pages/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/moniepoint/static/css/main.87927a73.css",
+    "main.js": "/moniepoint/static/js/main.41fff0cc.js",
+    "static/js/453.ed3810f9.chunk.js": "/moniepoint/static/js/453.ed3810f9.chunk.js",
+    "static/media/ani-7.png": "/moniepoint/static/media/ani-7.94c035f15773c9e2ecb1.png",
+    "static/media/ani-11.png": "/moniepoint/static/media/ani-11.7c1cf9441f407da65f05.png",
+    "static/media/ani-2.png": "/moniepoint/static/media/ani-2.664c60556015c1f8abe5.png",
+    "static/media/ani-8.png": "/moniepoint/static/media/ani-8.0e9ccd3082fa75c375eb.png",
+    "static/media/footer-logo.png": "/moniepoint/static/media/footer-logo.5481ae4d5610eadfed25.png",
+    "static/media/ani-10.png": "/moniepoint/static/media/ani-10.713e2e73e7373dff01d1.png",
+    "static/media/ani-1.png": "/moniepoint/static/media/ani-1.299039c22bb533f40414.png",
+    "static/media/ani-12.png": "/moniepoint/static/media/ani-12.bfec671507f33c15618d.png",
+    "static/media/footer-qr.png": "/moniepoint/static/media/footer-qr.c7f3f6c7de90bf2888f9.png",
+    "static/media/ani-3.png": "/moniepoint/static/media/ani-3.c193f2db868cc97f95e4.png",
+    "static/media/ani-6.png": "/moniepoint/static/media/ani-6.3696761d2fa0189ad2bb.png",
+    "static/media/ani-4.png": "/moniepoint/static/media/ani-4.af7dc03c526acb22cd66.png",
+    "index.html": "/moniepoint/index.html",
+    "main.87927a73.css.map": "/moniepoint/static/css/main.87927a73.css.map",
+    "main.41fff0cc.js.map": "/moniepoint/static/js/main.41fff0cc.js.map",
+    "453.ed3810f9.chunk.js.map": "/moniepoint/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87927a73.css",
-    "static/js/main.0f9c4734.js"
+    "static/js/main.41fff0cc.js"
   ]
 }
