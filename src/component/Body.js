@@ -22,6 +22,7 @@ function Body() {
   const [refFive, inViewFive] = useInView();
 
   const [countdown, setCountdown] = useState(264.2);
+  const [countdownTwo, setCountdownTwo] = useState(43);
 
   const springOne = useSpring({
     from: { opacity: 0, y: 100 },
@@ -86,6 +87,25 @@ function Body() {
     },
   });
 
+  const countdownSpringTwo = useSpring({
+    number: inViewTwo ? countdownTwo : 0,
+    from: { number: 0 },
+    reset: inViewTwo,
+    onRest: () => {
+      if (countdownTwo > 0) {
+        setCountdownTwo(countdownTwo - 1);
+      }
+    },
+  });
+
+  const scrollSpring = useSpring({
+    from: { scroll: 0 },
+    to: { scroll: 100 },
+    loop: true,
+    config: { duration: 10000 } // Adjust duration as needed
+  });
+
+
   return (
     <div className="body">
       <div className="group-wrapper" ref={refOne}>
@@ -145,7 +165,7 @@ function Body() {
                   Fast and easy access
                   <br /> to analytics
                 </p>
-                <p className="platform-text">
+                <p className="platform-info">
                   One platform is a comprehensive <br /> system of solutions that will be the <br />
                   first step towards the digitalization of <br /> your business!
                 </p>
@@ -162,7 +182,7 @@ function Body() {
                   <div className="profit-wrapper">
                     <p className="platform-text">Total profit</p>
                     <div className="price-text" ref={refTwo}>
-        <animated.span>{countdownSpring.number.to(num => num.toFixed(1))}</animated.span>
+        <animated.span>{countdownSpring.number.to(num => `$${num.toFixed(1)}k`)}</animated.span>
       </div>
                   </div>
                   <div className="visitor-card">
@@ -209,7 +229,9 @@ function Body() {
                   src={AnimationNine}
                   alt="AnimationNine"
                 />
-                <span className="cash-text text-white">43k</span>
+                <animated.span className="cash-text text-white">
+                  {countdownSpringTwo.number.to(num => num.toFixed(1))}
+                  </animated.span>
               </div>
             </div>
             <p className="text-white key-widget-text text-center">Widget control</p>
@@ -243,7 +265,14 @@ function Body() {
           src={AnimationTen}
           alt="AnimationTen"
         />
-        <div className="slide-text banner-text">Text</div>
+          <div className="slide-text banner-text" ref={refThree}>
+      <div className="scroll-content" style={{ overflowX: 'auto', whiteSpace: 'nowrap', width: '100%' }}>
+        <animated.div style={{ transform: scrollSpring.scroll.interpolate(x => `translateX(-${x}%)`) }}>
+          Text Text Text Text
+        </animated.div>
+      </div>
+    </div>
+
       </div>
       <hr className="hr-1" />
       <div className="key-text-wrapper">

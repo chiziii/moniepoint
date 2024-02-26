@@ -243,7 +243,13 @@
 .platform-text {
   color: #999999;
   font-size: 1.25rem;
-  font-weight: 200;
+  font-weight: 400;
+}
+
+.platform-info {
+  color: #999999;
+  font-size: 1.25rem;
+  font-weight: 300;
   margin-top: 5rem;
 }
 
@@ -350,8 +356,8 @@
 
 .max-text {
   padding-left: 7rem;
-  font-size: 10rem;
-  margin-bottom: 5rem;
+    font-size: 10rem;
+    margin: 5rem 0;
 }
 
 .slide-text {
