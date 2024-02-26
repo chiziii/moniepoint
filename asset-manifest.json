@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/moniepoint/static/css/main.87927a73.css",
-    "main.js": "/moniepoint/static/js/main.41fff0cc.js",
+    "main.css": "/moniepoint/static/css/main.6dc0698a.css",
+    "main.js": "/moniepoint/static/js/main.1ee1f7ff.js",
     "static/js/453.ed3810f9.chunk.js": "/moniepoint/static/js/453.ed3810f9.chunk.js",
     "static/media/ani-7.png": "/moniepoint/static/media/ani-7.94c035f15773c9e2ecb1.png",
     "static/media/ani-11.png": "/moniepoint/static/media/ani-11.7c1cf9441f407da65f05.png",
@@ -16,12 +16,12 @@
     "static/media/ani-6.png": "/moniepoint/static/media/ani-6.3696761d2fa0189ad2bb.png",
     "static/media/ani-4.png": "/moniepoint/static/media/ani-4.af7dc03c526acb22cd66.png",
     "index.html": "/moniepoint/index.html",
-    "main.87927a73.css.map": "/moniepoint/static/css/main.87927a73.css.map",
-    "main.41fff0cc.js.map": "/moniepoint/static/js/main.41fff0cc.js.map",
+    "main.6dc0698a.css.map": "/moniepoint/static/css/main.6dc0698a.css.map",
+    "main.1ee1f7ff.js.map": "/moniepoint/static/js/main.1ee1f7ff.js.map",
     "453.ed3810f9.chunk.js.map": "/moniepoint/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87927a73.css",
-    "static/js/main.41fff0cc.js"
+    "static/css/main.6dc0698a.css",
+    "static/js/main.1ee1f7ff.js"
   ]
 }
