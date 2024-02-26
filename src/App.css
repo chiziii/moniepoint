@@ -114,7 +114,8 @@
 }
 
 .banner-text-three {
-  margin-left: 25%
+  margin-left: 25%;
+  margin-top: -7rem;
 }
 
 .group-wrapper {
@@ -125,6 +126,8 @@
 
 .banner-text-two {
   margin-left: -16rem;
+  display: flex;
+  margin-top: -9rem;
 }
 
 .grey-text {

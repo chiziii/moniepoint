@@ -26,24 +26,45 @@ function Body() {
   const springOne = useSpring({
     from: { opacity: 0, y: 100 },
     to: { opacity: inViewOne ? 1 : 0, y: inViewOne ? 0 : 100 },
-    config: { tension: 300, friction: 20 }
+    config: { duration: 1100 },
+    delay: 500,
   });
   const springTwo = useSpring({
     from: { opacity: 0, y: 100 },
-    to: { opacity: inViewTwo ? 1 : 0, y: inViewTwo ? 0 : 100 },
-    config: { tension: 300, friction: 20 }
+    to: { opacity: inViewOne ? 1 : 0, y: inViewOne ? 0 : 100, rotate: inViewOne ? 180 : 0 },
+    config: { duration: 1100 },
+    delay: 100,
   });
 
   const springThree = useSpring({
     from: { opacity: 0, y: 100 },
     to: { opacity: inViewThree ? 1 : 0, y: inViewThree ? 0 : 100 },
-    config: { tension: 300, friction: 20 }
   });
 
   const springFive = useSpring({
     from: { opacity: 0, y: 100 },
     to: { opacity: inViewFive ? 1 : 0, y: inViewFive ? 0 : 100 },
-    config: { tension: 300, friction: 20 }
+  });
+
+  const spanSpring = useSpring({
+    from: { opacity: 0, y: 100 },
+    to: { opacity: inViewOne ? 1 : 0, y: inViewOne ? 0 : 100 },
+    config: { duration: 1000 },
+    delay: 300,
+  });
+
+  const spanSpringTwo = useSpring({
+    from: { opacity: 0, y: 100 },
+    to: { opacity: inViewOne ? 1 : 0, y: inViewOne ? 0 : 100 },
+    config: { duration: 1000 },
+    delay: 400,
+  });
+
+  const spanSpringThree = useSpring({
+    from: { opacity: 0, y: 100 },
+    to: { opacity: inViewOne ? 1 : 0, y: inViewOne ? 0 : 100 },
+    config: { duration: 1000 },
+    delay: 500,
   });
 
   const countdownSpring = useSpring({
@@ -61,40 +82,40 @@ function Body() {
     <div className="body">
       <div className="group-wrapper" ref={refOne}>
         <animated.img
-          style={ springOne}
+          style={springTwo}
           className="animation-one"
           src={AnimationOne}
           alt="AnimationOne"
         />
         <div className="banner-text">
-          <span>Analytics</span>
+          <animated.div style={spanSpring}>Analytics</animated.div>
           <br />
-          <span className="banner-text-two">
-            that
-            <span className="grey-text"> helps</span> you
-          </span>
+          <animated.div style={spanSpringTwo} className="banner-text-two">
+            <span> that </span>
+            <span className="grey-text">   helps  </span>   you  
+          </animated.div>
           <br />
         </div>
         <animated.img
-          style={{ ...springOne }}
+          style={springOne}
           className="animation-two"
           src={AnimationTwo}
           alt="AnimationOne"
         />
       </div>
-      <span className="banner-text-three banner-text">
+      <animated.div style={spanSpringThree} className="banner-text-three banner-text">
         {" "}
         shape
         <span>
           <animated.img
-            style={{ ...springOne }}
+            style={springOne}
             className="animation-three"
             src={AnimationThree}
             alt="AnimationThree"
           />
         </span>
         the future
-      </span>
+      </animated.div>
       <div className="rounded-card-wrapper">
         <div className="key-text-wrapper">
           <p className="key-text">
