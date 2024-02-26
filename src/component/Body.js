@@ -29,9 +29,17 @@ function Body() {
     config: { duration: 1100 },
     delay: 500,
   });
-  const springTwo = useSpring({
+
+  const springRotate = useSpring({
     from: { opacity: 0, y: 100 },
     to: { opacity: inViewOne ? 1 : 0, y: inViewOne ? 0 : 100, rotate: inViewOne ? 180 : 0 },
+    config: { duration: 1100 },
+    delay: 100,
+  });
+
+  const springTwo = useSpring({
+    from: { opacity: 0, y: 100 },
+    to: { opacity: inViewTwo ? 1 : 0, y: inViewTwo ? 0 : 100 },
     config: { duration: 1100 },
     delay: 100,
   });
@@ -82,17 +90,17 @@ function Body() {
     <div className="body">
       <div className="group-wrapper" ref={refOne}>
         <animated.img
-          style={springTwo}
+          style={springRotate}
           className="animation-one"
           src={AnimationOne}
           alt="AnimationOne"
         />
         <div className="banner-text">
-          <animated.div style={spanSpring}>Analytics</animated.div>
+          <animated.div style={spanSpring} className="margin-space">Analytics</animated.div>
           <br />
           <animated.div style={spanSpringTwo} className="banner-text-two">
-            <span> that </span>
-            <span className="grey-text">   helps  </span>   you  
+            <span>that</span>
+            <span className="grey-text margin-space">helps</span>you  
           </animated.div>
           <br />
         </div>
@@ -248,13 +256,13 @@ function Body() {
           <button className="start-btn">Start for free</button>
         </div>
       </div>
-      <div className="rounded-card-wrapper">
+      {/* <div className="rounded-card-wrapper">
         <div className="key-text-wrapper">
           <span className="key-text">Turning data into real<br />
               actions and ideas.
               </span>
         </div>
-      </div>
+      </div> */}
       <div className="max-text" ref={refFour}>
         <span>
           We give full <br />

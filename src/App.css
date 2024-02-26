@@ -188,6 +188,10 @@
   margin: 2rem
 }
 
+.margin-space {
+  margin: 0 1.5rem;
+}
+
 .widget-card{
   background-color: #0d0d0d;
   padding: 2rem;
@@ -208,6 +212,12 @@
     width: 9rem;
     height: 3rem;
     box-shadow: 0px 24px 34px 0px #0000000D;
+}
+
+.report-button:hover {
+  background-color: black;
+  color: #fff;
+  border: 1px solid #fff
 }
 
 .stats {
@@ -234,6 +244,7 @@
   color: #999999;
   font-size: 1.25rem;
   font-weight: 200;
+  margin-top: 5rem;
 }
 
 .animation-four {
